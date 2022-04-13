@@ -12,15 +12,15 @@ The main source material for the progression in this repo is the [Official Kotli
 
 The following table contains the names of different features learned and experimented with alongside the files in which there is some sample code to demonstrate it. Some files have been used to test more than 1 feature.
 
-| Feature | Files |
-| ----------- | ----------- |
-| Feature 1 | src/files/..... |
-| Feature 1 | src/files/..... |
-| Feature 1 | src/files/..... |
-| Feature 1 | src/files/..... |
-| Feature 1 | src/files/..... |
-| Feature 1 | src/files/..... |
-| Feature 1 | src/files/..... |
-| Feature 1 | src/files/..... |
+| Feature    | Files                                                                        |
+|------------|------------------------------------------------------------------------------|
+| Data class | [Employee.kt](./src/main/kotlin/com/kotlinplayground/assignment/Employee.kt) |
+| Feature 1  | src/files/.....                                                              |
+| Feature 1  | src/files/.....                                                              |
+| Feature 1  | src/files/.....                                                              |
+| Feature 1  | src/files/.....                                                              |
+| Feature 1  | src/files/.....                                                              |
+| Feature 1  | src/files/.....                                                              |
+| Feature 1  | src/files/.....                                                              |
 
 
