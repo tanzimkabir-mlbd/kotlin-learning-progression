@@ -4,6 +4,8 @@ import com.kotlinplayground.classes.Course
 
 interface CourseRepository {
 
+    val isCoursePersisted : Boolean
+
     fun getById(id: Int): Course
 
     fun save(course: Course): Int {
@@ -13,17 +15,22 @@ interface CourseRepository {
 }
 
 class SqlCourseRepository : CourseRepository {
+    override var isCoursePersisted: Boolean = false
+
     override fun getById(id: Int): Course {
         return Course(id, "Name of the course 1", "Author of course 1")
     }
 
     override fun save(course: Course): Int {
-        println("Not really doing anything. OVERRIDDEN!")
+        println("Not really doing anything. OVERRIDDEN! Flipping isCoursePersisted value")
+        isCoursePersisted = !isCoursePersisted
         return -1
     }
 }
 
 class NoSqlCourseRepository : CourseRepository {
+    override val isCoursePersisted: Boolean = false
+
     override fun getById(id: Int): Course {
         return Course(id, "Name of the course 2", "Author of course 2")
     }
@@ -78,11 +85,15 @@ fun main() {
     val course3 = Course(61, "Some new name", "And a different author")
     val newCourseId : Int = nosqlCourseRepository.save(course3)
     println(newCourseId)
+    println("Course persisted in noSql? ${nosqlCourseRepository.isCoursePersisted}")
 
+    println("Course persisted? ${sqlCourseRepository.isCoursePersisted}")
     val anotherCourseId : Int = sqlCourseRepository.save(course3)
     println(anotherCourseId)
+    println("Course persisted? ${sqlCourseRepository.isCoursePersisted}")
 
     val ab = AB()
     ab.doSomething()
+
 
 }

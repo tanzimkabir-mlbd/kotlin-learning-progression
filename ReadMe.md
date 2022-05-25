@@ -32,6 +32,9 @@ The following table contains the names of different features learned and experim
 | `object` keyword                      | [Authenticate.kt](./src/main/kotlin/com/kotlinplayground/classes/Authenticate.kt)      |
 | `companion object` keyword            | [Inheritance.kt](./src/main/kotlin/com/kotlinplayground/classes/Inheritance.kt)        |
 | Interfaces                            | [Interface.kt](./src/main/kotlin/com/kotlinplayground/interfaces/Interface.kt)         |
+| Access modifiers                      | [Inheritance.kt](./src/main/kotlin/com/kotlinplayground/classes/Inheritance.kt)        |
+| Type checking, casting, smart casting | [ExploreCast.kt](./src/main/kotlin/com/kotlinplayground/classes/ExploreCast.kt)        |
+| `enum` class                          | [Course.kt](./src/main/kotlin/com/kotlinplayground/classes/Course.kt)                  |
 
 
 

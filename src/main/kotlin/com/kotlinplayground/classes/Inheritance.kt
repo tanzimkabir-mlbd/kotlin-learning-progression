@@ -4,9 +4,17 @@ open class User(val name: String) {
 
     open var isNewUser : Boolean = true
 
+    protected var someNumber : Int = 0
+    get() = field+1
+
     open fun login(){
         println("Inside login function")
     }
+
+    private fun secret(){
+        println("Inside secret function")
+    }
+
 }
 
 class Student(name: String) : User(name){
@@ -23,6 +31,13 @@ class Student(name: String) : User(name){
         super.login()
         println("Inside student login function")
     }
+
+    fun changeSomeNumber(){
+        println(someNumber)
+        someNumber += 15
+        println(someNumber)
+    }
+
 }
 
 class Instructor(name: String) : User(name)
@@ -40,4 +55,6 @@ fun main() {
     instructor.login()
     println("Instructor new status ${instructor.isNewUser}")
 
+    student.changeSomeNumber()
+    val user = User("String initializer")
 }
