@@ -47,6 +47,7 @@ captures/
 .idea/libraries
 .idea/caches
 
+
 # Keystore files
 # Uncomment the following lines if you do not want to check your keystore files in.
 #*.jks
@@ -192,6 +193,7 @@ fabric.properties
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/**/checkstyle-idea.xml
 
 # Generated files
 .idea/**/contentModel.xml
