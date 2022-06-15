@@ -12,20 +12,29 @@ fun main() {
     val nestedList = listOf(listOf('a','b','c','d'), listOf('e','f','g','h'))
 
     val resultList1 = nestedList.map { it.map { it.uppercaseChar() } }
-//    println(resultList1)
+    println(resultList1)
 
     val resultList2 = nestedList.flatMap { it.map { it.uppercaseChar() } }
-//    println(resultList2)
+    println(resultList2)
 
-//    exploreFilter(courseList, devPredicate)
-//    exploreFilter(courseList, businessPredicate)
+    exploreFilter(courseList, devPredicate)
+    exploreFilter(courseList, businessPredicate)
 
-//    exploreMap(courseList, devPredicate)
+    exploreMap(courseList, devPredicate)
 
     val flattenedMap = exploreFlatMap(courseList, SPRING_BOOT)
-//    println(flattenedMap)
+    println(flattenedMap)
 
     exploreHashMap()
+
+    workOnNullCollection()
+}
+
+fun workOnNullCollection() {
+     val maybeNullList : List<String>? = null
+    maybeNullList?.forEach{
+        println("Value of this entry is $it")
+    }
 }
 
 fun exploreHashMap() {

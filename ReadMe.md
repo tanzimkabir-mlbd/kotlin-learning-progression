@@ -42,6 +42,9 @@ The following table contains the names of different features learned and experim
 | Map operation                         | [CollectionOperations.kt](./src/main/kotlin/com/kotlinplayground/collections/CollectionOperations.kt) |
 | FlatMap operation                     | [CollectionOperations.kt](./src/main/kotlin/com/kotlinplayground/collections/CollectionOperations.kt) |
 | HashMap operations                    | [CollectionOperations.kt](./src/main/kotlin/com/kotlinplayground/collections/CollectionOperations.kt) |
+| Using Sequences in Collections        | [CollectionSequences.kt](./src/main/kotlin/com/kotlinplayground/collections/CollectionSequences.kt)   |
+| Null Collections                      | [CollectionOperations.kt](./src/main/kotlin/com/kotlinplayground/collections/CollectionOperations.kt) |
+| Exception handling                    | [ExploreExceptions.kt](./src/main/kotlin/com/kotlinplayground/exceptions/ExploreExceptions.kt)        |
 
 
 
